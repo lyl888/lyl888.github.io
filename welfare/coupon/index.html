@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+</head>
+<body style="background-color: #ececec;">
+<script type="text/javascript">
+    function reset() {
+        var width = document.body.offsetWidth;
+        console.log(width)
+        var nowFont = width / 375 * 20;
+        document.body.style.fontSize = nowFont + "px";
+        console.log(nowFont)
+    }
+
+    reset();
+    window.onresize = reset;
+
+</script>
+<style>
+    html,
+    body {
+        margin: 0;
+    }
+
+    .c-cart {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .c-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .c-sign {
+        margin-top: 1rem;
+    }
+
+    .c-img,
+    .c-sign {
+        margin-left: 1rem;
+    }
+
+    .c-sign p {
+        font-size: 1rem;
+        color: #f10404;
+        margin-top: .7rem;
+    }
+
+    .coupon-midline {
+        width: .3rem;
+        height: 5rem;
+        position: absolute;
+        z-index: 9999;
+        border-right: 1px dashed #f6f6f6;
+        right: 6rem;
+    }
+
+    .badge:after,
+    .badge:before {
+        content: "";
+        position: absolute;
+        width: .7rem;
+        height: .7rem;
+        left: 0;
+        background-color: #ececec;
+        border-radius: 50%;
+    }
+
+    .badge:before {
+        top: -.2rem;
+    }
+
+    .badge:after {
+        bottom: -.2rem;
+    }
+
+    .c-l {
+        position: absolute;
+        color: #ffc300;
+        font-size: 1.2rem;
+        right: 2.3rem;
+    }
+</style>
+<div style="padding: 1rem 0;">
+    <div style="margin: 0px 1rem;margin-bottom: 1rem;background-color: #fff;">
+        <div class="c-cart"><img src="elm.png" alt="666" class="c-img">
+            <div class="c-sign">
+                <span style="font-size: .8rem;">饿了么</span>
+                <p>红包大狂欢，每天可领</p>
+            </div>
+            <div class="coupon-midline badge"></div>
+            <div class="c-l"
+                 onclick="window.location.href='https://tb.ele.me/wow/zele/act/swwt2?wh_biz=tm?from=cps_1&ali_trackid=2:mm_125549170_151650447_109749900128:1574057637_153_206399222'">
+                领取
+            </div>
+        </div>
+    </div>
+
+    <div style="margin: 0px 1rem;margin-bottom: 1rem;background-color: #fff;">
+        <div class="c-cart">
+            <img src="elm.png" alt="666" class="c-img">
+            <div class="c-sign">
+                <span style="font-size: .8rem;">饿了么</span>
+                <p>每天可领，最高29元</p>
+            </div>
+            <div class="coupon-midline badge"></div>
+            <div class="c-l"
+                 onclick="window.location.href='https://tb.ele.me/wow/zele/act/swwt15?wh_biz=tm?from=cps_2&ali_trackid=2:mm_125549170_151650447_109749900128:1574057613_144_488802030'">
+                领取
+            </div>
+        </div>
+    </div>
+
+    <div style="margin: 0px 1rem;margin-bottom: 1rem;background-color: #fff;">
+        <div class="c-cart">
+            <img src="mtwm.png" alt="666" class="c-img">
+            <div class="c-sign">
+                <span style="font-size: .8rem;">美团外卖</span>
+                <p>最高15元，每天1次</p>
+            </div>
+            <div class="coupon-midline badge"></div>
+            <div class="c-l"
+                 onclick="window.location.href='https://w.url.cn/s/AD4wX2s'">
+                领取
+            </div>
+        </div>
+    </div>
+    <div style="font-size: .7rem;color: #aaa;text-align: center;">
+        由&nbsp;<span>lyl_02888</span>&nbsp;提供(wechat)
+    </div>
+</div>
+</body>
+</html>
