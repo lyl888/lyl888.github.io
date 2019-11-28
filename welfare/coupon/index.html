@@ -7,16 +7,16 @@
 </head>
 <body style="background-color: #ececec;">
 <script type="text/javascript">
-    function reset() {
-        var width = document.body.offsetWidth;
-        console.log(width)
-        var nowFont = width / 375 * 20;
-        document.body.style.fontSize = nowFont + "px";
-        console.log(nowFont)
-    }
-
-    reset();
-    window.onresize = reset;
+    // function reset() {
+    //     var width = document.body.offsetWidth;
+    //     console.log(width)
+    //     var nowFont = width / 375 * 20;
+    //     document.body.style.fontSize = nowFont + "px";
+    //     console.log(nowFont)
+    // }
+    //
+    // reset();
+    // window.onresize = reset;
 
 </script>
 <style>
@@ -41,6 +41,10 @@
         height: 2.5rem;
     }
 
+    .c-sign {
+        margin-top: 1rem;
+    }
+
     .c-img,
     .c-sign {
         margin-left: 1rem;
@@ -49,7 +53,7 @@
     .c-sign p {
         font-size: 1rem;
         color: #f10404;
-        margin: 0;
+        margin-top: .7rem;
     }
 
     .coupon-midline {
